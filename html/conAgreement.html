@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap 101 Template</title>
+  <link rel="stylesheet" href="../css/yueBasic.css"/>
+  <!--[if lt IE 9]>
+    <script src="../js/html5shiv.min.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--导航条开始-->
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a href="IndexYht.html" class="logo1"></a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" href="#zhchj">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="navbar-collapse collapse" id="zhchj">
+      <ul class="nav navbar-nav navbar-right" ng-controller="myController">
+        <li class="dropdown"><a data-toggle="dropdown">登陆</a>
+          <div class="dropdown-menu" >
+            <div class="login-form">
+              <h3 class="center">登陆悦合同</h3>
+              <h4 class="center">合同如此简单</h4>
+
+              <form action="">
+                <div class="form-group">
+                  <label for="username" class="sr-only">用户名或手机号</label>
+                  <input type="text" id="username" class="form-control" placeholder="邮箱/手机号/昵称"/>
+                </div>
+                <div class="form-group">
+                  <label for="userpwd" class="sr-only">密码</label>
+                  <input type="text" id="userpwd" class="form-control" placeholder="密码"/>
+                </div>
+                <div class="checkbox" >
+                  <label><input type="checkbox" ng-model="iagree">记住密码</label>
+                </div>
+                <div class="form-group">
+                  <a href="#" class="btn btn-info btn-block" ng-disabled="!iagree">登陆</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </li>
+        <li class="dropdown"><a data-toggle="dropdown">注册</a>
+          <div class="dropdown-menu">
+            <div class="reg-form">
+              <h3 class="center">加入悦合同</h3>
+              <h4 class="center">合同如此简单</h4>
+
+              <form action="">
+                <div class="form-group">
+                  <label for="uname" class="sr-only">用户名或手机号</label>
+                  <input type="text" id="uname" class="form-control" placeholder="邮箱或手机号"/>
+                </div>
+                <div class="form-group">
+                  <label for="upwd" class="sr-only">用户名或手机号</label>
+                  <input type="text" id="upwd" class="form-control" placeholder="密码（不少于6位）"/>
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox" ng-model="agree">同意我公司条款</label>
+                </div>
+                <div class="form-group">
+                  <a href="" class="btn btn-info btn-block" ng-disabled="!agree">注册</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <span class="navbar-text navbar-right">|</span>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="firstContract.html">首份合同</a></li>
+        <li><a href="">合同库</a></li>
+        <li><a href="yueTopic.html">专题</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!--导航条结束-->
+  <div class="agree-main" style="margin-top:135px;">
+    <div class="container" style="background-color:#fff;">
+        <h1>出资协议</h1>
+        <small>请选择您定制《出资协议》所需要的内容：</small>
+      <div class="promoter">
+        <div class="form-group">
+          <label style="color:lightblue;">出资人:</label>
+          <label class="radio-inline">
+            <input type="radio" name="pro" value="1" >公司
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="pro" value="2">个人
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="pro" value="3">其他组织
+          </label>
+        </div>
+        <table class="table table-bordered">
+          <tr><td>名称：</td><td><input type="text"/></td></tr>
+          <tr><td>法定代表人/负责人：</td><td><input type="text"/></td></tr>
+          <tr><td>地址：</td><td><input type="text"/></td></tr>
+          <tr><td> 联系方式：</td><td><input type="text"/></td></tr>
+        </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<script src="../js/jquery-1.11.3.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+</body>
+</html>

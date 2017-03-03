@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="../img/favicon.ico"/>
+  <script src="../js/jquery-1.11.3.js"></script>
+  <title>悦合同</title>
+  <link rel="stylesheet" href="../css/yueBasic.css"/>
+  <link rel="stylesheet" href="../css/yueTopic.css"/>
+  <!--[if lt IE 9]>
+    <script src="../js/html5shiv.min.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <![endif]-->
+  <style>
+    /*div{*/
+      /*border:1px solid red;*/
+    /*}*/
+  </style>
+
+
+</head>
+<body>
+<!--导航条开始-->
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a href="IndexYht.html" class="logo1"></a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" href="#zhchj">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="navbar-collapse collapse" id="zhchj">
+      <form class="navbar-form navbar-right">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="热门搜索：股权...">
+          <button type="submit" class="btn btn-info">
+            <span class="glyphicon glyphicon-search"></span>
+          </button>
+        </div>
+        </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown"><a data-toggle="dropdown">登陆</a>
+          <div class="dropdown-menu">
+            <div class="login-form">
+              <h3 class="center">登陆悦合同</h3>
+              <h4 class="center">合同如此简单</h4>
+              <form action="">
+                <div class="form-group">
+                  <label for="username" class="sr-only">用户名或手机号</label>
+                  <input type="text" id="username" class="form-control" placeholder="邮箱/手机号/昵称"/>
+                </div>
+                <div class="form-group">
+                  <label for="userpwd" class="sr-only">密码</label>
+                  <input type="text" id="userpwd" class="form-control" placeholder="密码"/>
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox">记住密码</label>
+                </div>
+                <div class="form-group">
+                  <button type="button" class="btn btn-info btn-block">登陆</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </li>
+        <li class="dropdown"><a data-toggle="dropdown">注册</a>
+          <div class="dropdown-menu">
+            <div class="reg-form">
+              <h3 class="center">加入悦合同</h3>
+              <h4 class="center">合同如此简单</h4>
+
+              <form action="">
+                <div class="form-group">
+                  <label for="uname" class="sr-only">用户名或手机号</label>
+                  <input type="text" id="uname" class="form-control" placeholder="邮箱或手机号"/>
+                </div>
+                <div class="form-group">
+                  <label for="upwd" class="sr-only">用户名或手机号</label>
+                  <input type="text" id="upwd" class="form-control" placeholder="密码（不少于6位）"/>
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox">同意我公司条款</label>
+                </div>
+                <div class="form-group">
+                  <button type="button" class="btn btn-info btn-block">注册</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <!--登陆注册-->
+      <span class="navbar-text navbar-right">|</span>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="IndexYht.html">首页</a></li>
+        <li><a href="yueTopic.html">专题</a></li>
+      </ul>
+      <!-- 其他按钮-->
+    </div>
+  </div>
+</div>
+<!--导航条结束-->
+<!--页面主体部分开始-->
+<div class="main">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-2 col-xs-2 main-col1">
+        <ul class="list-unstyled ul1">
+          <li class="img-span">
+            <div class="row">
+              <div class="col-md-4 col-xs-12"><span class="img-span1"></span></div>
+              <div class="col-md-8 col-xs-12"><a href="#">股权</a></div>
+            </div>
+          </li>
+          <li class="img-span">
+            <div class="row">
+              <div class="col-md-4 col-xs-12"> <span class="img-span2"></span></div>
+              <div class="col-md-8 col-xs-12"><a href="#">知识产权</a></div>
+            </div>
+          </li>
+          <li class="img-span">
+            <div class="row">
+              <div class="col-md-4 col-xs-12"><span class="img-span3"></span></div>
+              <div class="col-md-8 col-xs-12"><a href="#">人事</a></div>
+            </div>
+          </li>
+          <li class="img-span">
+            <div class="row">
+              <div class="col-md-4 col-xs-12"><span class="img-span4"></span></div>
+              <div class="col-md-8 col-xs-12"><a href="#">金融</a></div>
+            </div>
+          </li>
+          <li class="img-span">
+            <div class="row">
+              <div class="col-md-4 col-xs-12"><span class="img-span5"></span></div>
+              <div class="col-md-8 col-xs-12"><a href="#">担保</a></div>
+            </div>
+          </li>
+          <li class="img-span">
+            <div class="row">
+              <div class="col-md-4 col-xs-12"><span class="img-span6"></span></div>
+              <div class="col-md-8 col-xs-12"><a href="#">房地产</a></div>
+            </div>
+          </li>
+          <li class="img-span">
+            <div class="row">
+              <div class="col-md-4 col-xs-12"><span class="img-span7"></span></div>
+              <div class="col-md-8 col-xs-12"><a href="#">婚姻</a></div>
+            </div>
+          </li>
+          <li class="img-span">
+            <div class="row">
+              <div class="col-md-4 col-xs-12"><span class="img-span8"></span></div>
+              <div class="col-md-8 col-xs-12"><a href="#">买卖</a></div>
+            </div>
+          </li>
+          <li class="img-span">
+            <div class="row">
+              <div class="col-md-4 col-xs-12"><span class="img-span9"></span></div>
+              <div class="col-md-8 col-xs-12"><a href="#">服务</a></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-10 col-xs-10 second-col">
+        <div class="number0">
+            <div class="row">
+              <div class="col-sm-6 col-xs-12 main-col2">
+                <ul class="list-unstyled ul2">
+                  <li>
+                    <a href="#">出资协议</a>
+                    <span class="lg">生成：134次</span>
+                  </li>
+                  <li><a href="#">股东会决议（增资）</a>
+                    <span class="lg">生成：233次</span>
+                  </li>
+                  <li><a href="#">收据（转股）</a>
+                    <span class="lg">生成：28次</span>
+                  </li>
+                  <li><a href="#">股权代持协议</a>
+                    <span class="lg">生成：165次</span>
+                  </li>
+                  <li><a href="#">公司收购协议</a>
+                    <span class="lg">生成：279次</span>
+                  </li>
+                  <li><a href="#">普通合伙协议</a>
+                    <span class="lg">生成：270次</span>
+                  </li>
+                </ul>
+              </div>
+                  <div class="col-sm-6 col-xs-12">
+                <ul class="list-unstyled">
+                  <li><a href="#">股权转让洗衣</a>
+                    <span class="lg">生成：26次</span>
+                  </li>
+                  <li><a href="#">股东会决议（转股）</a>
+                    <span class="lg">生成：16次</span>
+                  </li>
+                  <li><a href="#">召开股东会通知书</a>
+                    <span class="lg">生成：124次</span>
+                  </li>
+                  <li><a href="#">增资协议</a>
+                    <span class="lg">生成：105次</span>
+                  </li>
+                  <li><a href="#">资产收购协议</a>
+                    <span class="lg">生成：165次</span>
+                  </li>
+                  <li><a href="#">有限合伙协议</a>
+                    <span class="lg">生成：127次</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </div>
+        <div class="number1">
+            <div class="row">
+            <div class="col-sm-6 col-xs-12 main-col2">
+              <ul class="list-unstyled ul2">
+                <li>
+                  <a href="#">专利技术许可合同</a>
+                  <span class="lg">生成：34次</span>
+                </li>
+                <li><a href="#">商标许可使用合同</a>
+                  <span class="lg">生成：233次</span>
+                </li>
+                <li><a href="#">在职知识产权合同</a>
+                  <span class="lg">生成：28次</span>
+                </li>
+                <li><a href="#">版权授权协议</a>
+                  <span class="lg">生成：165次</span>
+                </li>
+                <li><a href="#">版权转让协议</a>
+                  <span class="lg">生成：279次</span>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-xs-12">
+              <ul class="list-unstyled ">
+                <li><a href="#">专利转让合同</a>
+                  <span class="lg">生成：26次</span>
+                </li>
+                <li><a href="#">商标转让合同</a>
+                  <span class="lg">生成：16次</span>
+                </li>
+                <li><a href="#">召开股东会通知书</a>
+                  <span class="lg">生成：124次</span>
+                </li>
+                <li><a href="#">版权授权协议</a>
+                  <span class="lg">生成：105次</span>
+                </li>
+                <li><a href="#">版权转让协议</a>
+                  <span class="lg">生成：165次</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="number2">
+          <div class="row">
+            <div class="col-sm-6 col-xs-12 main-col2">
+              <ul class="list-unstyled ul2">
+                <li>
+                  <a href="#">劳动合同</a>
+                  <span class="lg">生成：282次</span>
+                </li>
+                <li><a href="#">员工入职登记表</a>
+                  <span class="lg">生成：193次</span>
+                </li>
+                <li><a href="#">员工试用期评估评审表</a>
+                  <span class="lg">生成：73次</span>
+                </li>
+                <li><a href="#">岗位职责说明书</a>
+                  <span class="lg">生成：158次</span>
+                </li>
+                <li><a href="#">招聘录用审批表</a>
+                  <span class="lg">生成：279次</span>
+                </li>
+                <li><a href="#">离职证明</a>
+                  <span class="lg">生成：270次</span>
+                </li>
+                <li><a href="#">请假条</a>
+                  <span class="lg">生成：270次</span>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-xs-12">
+              <ul class="list-unstyled ">
+                <li><a href="#">员工入职申请表</a>
+                  <span class="lg">生成：26次</span>
+                </li>
+                <li><a href="#">员工离职交接确认书</a>
+                  <span class="lg">生成：16次</span>
+                </li>
+                <li><a href="#">在职知识产权合同</a>
+                  <span class="lg">生成：124次</span>
+                </li>
+                <li><a href="#">工资表</a>
+                  <span class="lg">生成：105次</span>
+                </li>
+                <li><a href="#">解除劳动合同通知书</a>
+                  <span class="lg">生成：165次</span>
+                </li>
+                <li><a href="#">保密合同</a>
+                  <span class="lg">生成：127次</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="number3">
+          <div class="row">
+            <div class="col-sm-6 col-xs-12 main-col2">
+              <ul class="list-unstyled ul2">
+                <li>
+                  <a href="#">借款合同</a>
+                  <span class="lg">生成：134次</span>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-xs-12">
+              <ul class="list-unstyled ">
+                <li><a href="#">收据（借款）</a>
+                  <span class="lg">生成：26次</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="number4">
+          <div class="row">
+          <div class="col-sm-6 col-xs-12 main-col2">
+            <ul class="list-unstyled ul2">
+              <li>
+                <a href="#">保证合同</a>
+                <span class="lg">生成：134次</span>
+              </li>
+              <li><a href="#">质押合同</a>
+                <span class="lg">生成：233次</span>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-xs-12">
+            <ul class="list-unstyled ">
+              <li><a href="#">抵押合同</a>
+                <span class="lg">生成：26次</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        </div>
+        <div class="number5">
+          <div class="row">
+            <div class="col-sm-6 col-xs-12 main-col2">
+              <ul class="list-unstyled ul2">
+                <li>
+                  <a href="#">二手房买卖合同</a>
+                  <span class="lg">生成：134次</span>
+                </li>
+                <li><a href="#">场地租赁合同（农村）</a>
+                  <span class="lg">生成：233次</span>
+                </li>
+                <li><a href="#">建设工程承包合同</a>
+                  <span class="lg">生成：28次</span>
+                </li>
+                <li><a href="#">房屋装修合同</a>
+                  <span class="lg">生成：165次</span>
+                </li>
+                <li><a href="#">配偶（共有权人）同意出售证明</a>
+                  <span class="lg">生成：279次</span>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-xs-12">
+              <ul class="list-unstyled ">
+                <li><a href="#">商品租赁合同</a>
+                  <span class="lg">生成：26次</span>
+                </li>
+                <li><a href="#">展位租赁合同</a>
+                  <span class="lg">生成：16次</span>
+                </li>
+                <li><a href="#">房屋租赁合同</a>
+                  <span class="lg">生成：124次</span>
+                </li>
+                <li><a href="#">柜台租赁合同</a>
+                  <span class="lg">生成：105次</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="number6">
+          <div class="row">
+            <div class="col-sm-6 col-xs-12 main-col2">
+              <ul class="list-unstyled ul2">
+                <li>
+                  <a href="#">夫妻婚后财产约定书</a>
+                  <span class="lg">生成：134次</span>
+                </li>
+                <li><a href="#">离婚协议</a>
+                  <span class="lg">生成：233次</span>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-xs-12">
+              <ul class="list-unstyled ">
+                <li><a href="#">抚养权协议</a>
+                  <span class="lg">生成：26次</span>
+                </li>
+                <li><a href="#">离婚协议</a>
+                  <span class="lg">生成：16次</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="number7">
+          <div class="row">
+            <div class="col-sm-6 col-xs-12 main-col2">
+              <ul class="list-unstyled ul2">
+                <li>
+                  <a href="#">二手房买卖合同</a>
+                  <span class="lg">生成：134次</span>
+                </li>
+                <li><a href="#">配偶（共有权人）同意出售证明</a>
+                  <span class="lg">生成：233次</span>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-xs-12">
+              <ul class="list-unstyled ">
+                <li><a href="#">货物买卖合同</a>
+                  <span class="lg">生成：26次</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="number8">
+          <div class="row">
+            <div class="col-sm-6 col-xs-12 main-col2">
+              <ul class="list-unstyled ul2">
+                <li>
+                  <a href="#">企业服务代理合同</a>
+                  <span class="lg">生成：134次</span>
+                </li>
+                <li><a href="#">物业服务合同</a>
+                  <span class="lg">生成：233次</span>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-xs-12">
+              <ul class="list-unstyled ">
+                <li><a href="#">庆典服务合同</a>
+                  <span class="lg">生成：26次</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+<!--页面主体部分结束-->
+<!--页面底部开始-->
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-xs-12">
+        <div class="row">
+          <div class="col-xs-6">
+            <h3>产品</h3>
+            <ul class="list-unstyled">
+              <li><a href="">智能合同</a></li>
+              <li><a href="">写合同</a></li>
+              <li><a href="">审合同</a></li>
+              <li><a href="">法律顾问</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-6">
+            <h3>政策</h3>
+            <ul class="list-unstyled">
+              <li><a href="">服务协议</a></li>
+              <li><a href="">常见问题</a></li>
+              <li><a href="">会员政策</a></li>
+              <li><a href="">定价标准</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xs-12">
+        <div class="col-xs-6">
+          <h3>公司</h3>
+          <ul class="list-unstyled">
+            <li><a href="">关于悦合同</a></li>
+            <li><a href="">联系我们</a></li>
+            <li><a href="">加入我们</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-6">
+          <h3>资源</h3>
+          <ul class="list-unstyled">
+            <li><a href="">网站地图</a></li>
+            <li><a href="">意见反馈</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--页面底部结束-->
+
+<script src="../js/jquery-1.11.3.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script>
+  $().ready(function(){
+    $(".number0").show().siblings().hide();
+  });
+  $(".ul1>li").click(function(){
+    $(".number"+$(this).index()).show().siblings().hide();
+  });
+</script>
+</body>
+</html>

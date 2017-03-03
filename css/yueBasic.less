@@ -1,0 +1,57 @@
+//引入bootstarp样式
+@import "less/bootstrap.less";
+//自定义css样式
+.reg-form,.login-form {
+  width: 300px;
+  heght: 250px;
+  padding: 15px;
+  border-radius: 5px;
+  > h3.center, > h4.center {
+    display: block;
+    text-align: center;
+  }
+}
+@media (min-width:1200px){
+  .logo1{
+    .logo;
+    width:195px;
+    height:75px;
+    background-position:0 0;
+    margin-top:15px;
+  };
+}
+@media(min-width:992px)and(max-width:1199px){
+  .logo1{
+    .logo;
+    width:158px;
+    height:58px;
+    background-position:-195px 0;
+    margin-top:24px;
+  }
+}
+@media(min-width:768px)and (max-width: 991px){
+  .logo1{
+    .logo;
+    width: 125px;
+    height: 48px;
+    background-position:0px -75px;
+    margin-top:30px;
+  }
+}
+@media(max-width:767px){
+  .logo1{
+    .logo;
+    width:110px;
+    height:42px;
+    background-position:-125px -86px;
+    margin-top:36px;
+  }
+}
+.logo{
+  display: inline-block;
+  background-image: url(../img/yue-sprit001.png);
+  background-repeat: no-repeat;
+}
+ul>li>a{
+  font-size:1.2em;
+}
